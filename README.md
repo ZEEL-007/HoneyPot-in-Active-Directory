@@ -27,7 +27,6 @@
 - [Modules](#modules)
 - [Requirements](#requirements)
 - [Setup & Usage](#setup--usage)
-- [Screenshots](#screenshots)
 - [MITRE ATT&CK Mapping](#mitre-attck-mapping)
 - [Disclaimer](#disclaimer)
 - [Author](#author)
@@ -132,8 +131,8 @@ Starts a **live polling loop** (every 5 seconds) that:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/SentinelPS.git
-cd SentinelPS
+git clone https://github.com/ZEEL-007/HoneyPot-in-Active-Directory.git
+cd HoneyPot-in-Active-Directory
 ```
 
 ### 2. Allow Script Execution (if needed)
@@ -160,9 +159,7 @@ Select `1` to deploy honey accounts, then select `2` to start live monitoring.
 
 ---
 
-## 📸 Screenshots
 
-> *(Add screenshots of the terminal running on your Windows Server VM here)*
 
 ---
 
@@ -190,7 +187,7 @@ SentinelPS acts as a **detect & respond** layer against these techniques.
 ## 👤 Author
 
 **Zeel**  
-M.Sc. IT — Cybersecurity  
+M.Sc. IT - Cybersecurity  
 Blue Team | VAPT | Active Directory Security
 
 > *"The best defense is one the attacker doesn't know they've walked into."*
