@@ -1,4 +1,4 @@
-# 🛡️ SentinelPS — Active Defense & Deception Framework
+# 🛡️ SentinelPS - Active Defense & Deception Framework
 
 ```
   ███████╗███████╗███╗   ██╗████████╗██╗███╗   ██╗███████╗██╗     ██████╗ ███████╗
@@ -15,7 +15,7 @@
 ![Platform](https://img.shields.io/badge/Platform-Windows%20Server%20%2F%20AD-lightgrey?logo=windows)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-> **SentinelPS** is a PowerShell-based Active Defense and Deception tool built for Blue Team operations. It deploys fake "Honey Accounts" inside Active Directory to lure and detect attackers — and monitors them in real time for any suspicious login activity.
+> **SentinelPS** is a PowerShell-based Active Defense and Deception tool built for Blue Team operations. It deploys fake "Honey Accounts" inside Active Directory to lure and detect attackers - and monitors them in real time for any suspicious login activity.
 
 ---
 
@@ -36,7 +36,7 @@
 
 ## 📖 About the Project
 
-SentinelPS is designed for **Active Directory environments** where defenders want to go beyond passive monitoring. Instead of only waiting for attacks, this framework plants deceptive accounts that serve as traps — any interaction with these accounts is a guaranteed indicator of compromise.
+SentinelPS is designed for **Active Directory environments** where defenders want to go beyond passive monitoring. Instead of only waiting for attacks, this framework plants deceptive accounts that serve as traps - any interaction with these accounts is a guaranteed indicator of compromise.
 
 Built as part of a Blue Team cybersecurity project, SentinelPS demonstrates:
 - AD-based deception techniques
@@ -63,27 +63,27 @@ Built as part of a Blue Team cybersecurity project, SentinelPS demonstrates:
   CRITICAL alert fired → logged to alerts.json
 ```
 
-Honey accounts are **real AD accounts** — they look legitimate but are never used by actual users. Any interaction with them is a red flag.
+Honey accounts are **real AD accounts** - they look legitimate but are never used by actual users. Any interaction with them is a red flag.
 
 ---
 
 ## ✨ Features
 
 - 🍯 **Deploy Honey Accounts** directly into Active Directory with a single menu option
-- 🔍 **List Honey Accounts** — shows current status, enabled state, and last logon time
-- 🗑️ **Remove Honey Accounts** — clean teardown when done
-- 📡 **Live Monitor** — polls every 5 seconds for:
+- 🔍 **List Honey Accounts** - shows current status, enabled state, and last logon time
+- 🗑️ **Remove Honey Accounts** - clean teardown when done
+- 📡 **Live Monitor** - polls every 5 seconds for:
   - Failed login attempts (`BadLogonCount`)
   - Successful logins (`LastLogonDate`)
   - Windows Security Event Log (Event ID `4624` & `4625`)
-- 🧾 **JSON Alert Logging** — all alerts saved to `C:\SentinelPS\Logs\alerts.json`
-- 🎨 **Color-coded console output** — INFO, WARN, CRITICAL, OK levels
+- 🧾 **JSON Alert Logging** - all alerts saved to `C:\SentinelPS\Logs\alerts.json`
+- 🎨 **Color-coded console output** - INFO, WARN, CRITICAL, OK levels
 
 ---
 
 ## 🧩 Modules
 
-### Module 1 — Honey Account Manager
+### Module 1 - Honey Account Manager
 
 | Option | Action |
 |--------|--------|
@@ -98,11 +98,11 @@ admin_temp
 helpdesk_legacy
 CEO_assistant
 ```
-> These names are intentionally crafted to look like forgotten or legacy service accounts — exactly what an attacker would target.
+> These names are intentionally crafted to look like forgotten or legacy service accounts - exactly what an attacker would target.
 
 ---
 
-### Module 2 — Honey Account Monitor
+### Module 2 - Honey Account Monitor
 
 Starts a **live polling loop** (every 5 seconds) that:
 
