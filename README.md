@@ -159,10 +159,6 @@ Select `1` to deploy honey accounts, then select `2` to start live monitoring.
 
 ---
 
-
-
----
-
 ## 🎯 MITRE ATT&CK Mapping
 
 | Technique | ID | Description |
